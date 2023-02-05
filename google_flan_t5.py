@@ -8,5 +8,6 @@ def generate(input_text):
   output = model.generate(input_ids, max_length=100)
   return tokenizer.decode(output[0], skip_special_tokens=True)
 
+# write the prompt here
 input_text = ""
 generate(input_text)
